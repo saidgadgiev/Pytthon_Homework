@@ -10,4 +10,4 @@ n = input("Введите трехзначное число -> ")
 count = 0
 for i in range (len(n)):
     count = count + int(n[i])
-print(count)
+print("Сумма цифр равна -> ", count)

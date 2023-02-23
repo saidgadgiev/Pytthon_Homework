@@ -21,3 +21,4 @@ if gerb > reshka:
     print(reshka)
 else:
     print(gerb)
+    

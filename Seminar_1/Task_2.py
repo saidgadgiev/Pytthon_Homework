@@ -8,6 +8,6 @@
 '''
 n = input("Введите трехзначное число -> ")
 count = 0
-for i in range (len(n)):
-    count = count + int(n[i])
+for i in n:
+    count += int(i)
 print("Сумма цифр равна -> ", count)

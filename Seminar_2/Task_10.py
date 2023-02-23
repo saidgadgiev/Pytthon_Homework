@@ -7,4 +7,17 @@
 5 -> 1 0 1 1 0
 2
 '''
+
 n = int(input())
+reshka = 0
+gerb = 0
+for i in range(n):
+    x = int(input())
+    if x == 0:
+        reshka += 1
+    else:
+        gerb += 1
+if gerb > reshka:
+    print(reshka)
+else:
+    print(gerb)

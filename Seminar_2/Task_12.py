@@ -8,3 +8,15 @@
 4 4 -> 2 2
 5 6 -> 2 3
 """
+
+s = int(input())
+p = int(input())
+flag = False
+for i in range(s):
+    if flag == True:
+        break
+    for j in range(p):
+        if s == i + j and p == i * j:
+            print(f"Петя загадал числа X -> {i},и Y ->  {j}")
+            flag = True
+            break

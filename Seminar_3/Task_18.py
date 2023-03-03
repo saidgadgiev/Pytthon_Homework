@@ -16,17 +16,18 @@ n = int(input("Введите число N кол эл в массиве  -> "))
 lst = [rnd.randrange(10) for _ in range(n)]
 print (lst)
 x = int(input("Введите число X -> "))
-cash1 = 0
-cash2 = 9999
+# cash1 = 0
+# cash2 = 9999
 for i in lst:
-    if cash1 < i < x:
-        cash1 = i
-    elif cash2 > i > x:
-        cash2 = i
-if x - cash1 == cash2 - x:
-    print(f"Самый близкий к числу {x} это два числа -> {cash1} и {cash2}")
+    pass
+#     if cash1 < i < x:
+#         cash1 = i
+#     elif cash2 > i > x:
+#         cash2 = i
+# if x - cash1 == cash2 - x:
+    # print(f"Самый близкий к числу {x} это два числа -> {cash1} и {cash2}")
 
-elif x - cash1 < cash2 - x:
-    print(f"Самый близский к числу {x} это число -> {cash1}")
-else:
-    print(f"Самый близский к числу {x} это число -> {cash2}")
+# elif x - cash1 <= cash2 - x:
+#     print(f"Самый близский к числу {x} это число -> {cash1}")
+# else:
+#     print(f"Самый близский к числу {x} это число -> {cash2}")

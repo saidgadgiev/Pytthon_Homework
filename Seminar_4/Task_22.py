@@ -11,13 +11,23 @@
 
 
 '''
-a = [2, 4, 6, 8, 10, 12, 10, 8, 6, 4, 2]
-b = [3, 6, 9, 12, 15, 18]
-print(*a)
-print(*b)
-a = set(a)
-b = set(b)
-c = a.intersection(b)
-c = list(c)
-c.sort()
-print(*c)
+n = int(input("Количество элементов первого множества -> "))
+m = int(input("Количество элементов второго множества -> "))
+print(f"Введите элеменов {n} первого множества")
+a_lst = [int(input()) for _ in range(n)]
+# a = [2, 4, 6, 8, 10, 12, 10, 8, 6, 4, 2]
+print(f"Введите элеменов {n} второго множества")
+b_lst = [int(input()) for _ in range(m)]
+# b = [3, 6, 9, 12, 15, 18]
+print(*a_lst)
+print(*b_lst)
+a_set = set(a_lst) # Из списка в о мнрожества
+b_set = set(b_lst) # Из списка в о мнрожества
+c_set = a_set.intersection(b_set) # Вывод встречающихся чисел
+if len(c_set) == 0: # Если нет вчтречающихся чисел
+    print("Числа не встречаються")
+
+else:
+    c_lst = list(c_set)
+    c_lst.sort()
+    print(*c_lst)

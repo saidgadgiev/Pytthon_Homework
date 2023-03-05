@@ -42,3 +42,4 @@ for char_ in text:
         if char_ in dict_[i]:
             count += i
 print(f'Слово -> {txt} \nстоит -> {count}')
+
